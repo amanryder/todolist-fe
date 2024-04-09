@@ -9,6 +9,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Auth0Provider
       domain="dev-l1hhkali.us.auth0.com"
       clientId="qsU4oTBBIOWmJ15521Zx7xu5aIoWKxn1"
+      useRefreshTokens={true}
+      cacheLocation="localstorage"
       authorizationParams={{
         redirectUri: window.location.origin,
         scope: "openid profile email",
