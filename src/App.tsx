@@ -8,7 +8,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryclient}>
-      <div className="h-full bg-[#efeef5]">
+      <div className="h-screen bg-[#efeef5]">
         {isAuthenticated ? <Todos /> : <Login />}
       </div>
     </QueryClientProvider>
